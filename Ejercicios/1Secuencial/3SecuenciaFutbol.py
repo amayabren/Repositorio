@@ -1,3 +1,7 @@
+"""Un hincha de fútbol desea conocer la cantidad de puntos que su equipo lleva acumulados en el campeonato, para ello recibe cada semana la información de la cantidad total 
+de partidos, desde el inicio del campeonato, que el equipo ha perdido, ha empatado y ha ganado. Por cada partido empatado recibe un punto, por cada partido ganado 
+tres puntos y por los perdidos cero puntos."""
+
 puntos_empatado=1
 puntos_ganado=3
 semanas_num = int(input("Escriba la cantidad de semanas: "))
@@ -14,4 +18,4 @@ while count < semanas_num:
     if count < semanas_num:
         print("Siguiente semana...")
 
-print(puntos_total)
+print("Los puntos en total son: ", puntos_total)

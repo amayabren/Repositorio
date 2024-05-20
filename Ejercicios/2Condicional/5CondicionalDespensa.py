@@ -27,10 +27,12 @@ def desc_jubliado(total):
 if unidades > 12 and unidades <= 24:
     total = desc_diez()
     print(f"Tiene un descuento del 10%. Total: ${total} ")
-
-if unidades > 24:
+elif unidades > 24:
     total = desc_quince()
     print(f"Tiene un descuento del 15%. Total: ${total}")
+else:
+    total = unidades * leche
+    print(f"El total es: ${total}")
 
 if jubilado == "s":
     costo = desc_jubliado(total)

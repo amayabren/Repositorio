@@ -1,3 +1,5 @@
+#Usé funciones porque me pareció que solo usar if o else iba a quedar muy largo así que opté por esta forma.
+
 agenda = { }
 def menu():
     print("1. Agregar una persona (apellido, nombre, dni, email y número de teléfono).")
@@ -39,12 +41,12 @@ while ciclo == "s":
     opcion_elegida = opcion()
     if opcion_elegida == 1:
          agregar()
-    if opcion_elegida == 2:
+    elif opcion_elegida == 2:
          modificar()
-    if opcion_elegida == 3:
+    elif opcion_elegida == 3:
          eliminar()
-    if opcion_elegida == 4:
+    elif opcion_elegida == 4:
          mostrar()
-    if opcion_elegida == 5:
+    elif opcion_elegida == 5:
         break
 

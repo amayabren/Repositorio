@@ -5,12 +5,11 @@
 #cuadrado. Puedes hacer un algoritmo para calcular el costo de mano de obra para
 #pintar la pared.
 
-metros = int(input("Ingrese los metros: "))
+ancho = int(input("Ingrese el ancho de la pared: "))
+altura = int(input("Ingrese la altura de la pared: "))
 montopormetro = int(input("Ingrese el costo por metro cuandrado: "))
 
-def total(metros, montopormetro):
-    costo = metros * montopormetro
-    print(costo)
+metros = ancho * altura
+costo = metros * montopormetro
 
-print("El costo será de: ")
-total(metros, montopormetro)
+print(f"El costo será de: ${costo}")
